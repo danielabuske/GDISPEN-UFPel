@@ -1,0 +1,42 @@
+{
+  "status": "Current version: boxplots are recalculated, not copied from the old manuscript.",
+  "central_probability": 0.96,
+  "samples_per_week": 10000,
+  "seed": 20261102,
+  "reach_multiplier_sd": 2.053748910631822,
+  "beta_mean": 1.2939,
+  "beta_sd": 0.1294,
+  "mu_log": 0.25268498267900075,
+  "sigma_log": 0.0997590162418358,
+  "truncation_cdf": [
+    0.4,
+    0.75
+  ],
+  "calculated_beta_bounds": [
+    1.2553461168790503,
+    1.3770884019375011
+  ],
+  "whisker_percentiles": [
+    5.0,
+    95.0
+  ],
+  "spatial_parameters": {
+    "L_km": 0.00894,
+    "alpha": 3.18,
+    "gamma_per_week": 1.2727272727272727,
+    "Tg_weeks": 2.6
+  },
+  "reference_data": "red_references.csv",
+  "notes": [
+    "The default selects a central 96% OU interval before modulation, not an ensemble percentile.",
+    "The axis names model reach; red references remain diameters of reconstructed observed clusters.",
+    "The historical Bangkok calibration of alpha retains the 96% convention; no recalibration.",
+    "Sample size and seed were specified for this implementation; the originals are unknown.",
+    "Independent weekly draws represent marginal distributions, not trajectories.",
+    "Boxes show P25-P75, medians P50, and whiskers P5-P95 of modeled heterogeneity.",
+    "Whiskers are not 95% confidence intervals or the P25/P75 percentiles stated in the old caption.",
+    "No factor of 0.8 was applied to imitate the published boxplots.",
+    "References were extracted from the OU manuscript; Guzzetta's primary data were not recovered.",
+    "No RMSE, MAE, or R2 is calculated: modulated 1D reach and maximum cluster diameter are not equivalent."
+  ]
+}

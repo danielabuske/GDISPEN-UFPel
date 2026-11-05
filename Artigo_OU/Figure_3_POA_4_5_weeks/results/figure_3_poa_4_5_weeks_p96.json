@@ -1,0 +1,59 @@
+{
+  "figure": 3,
+  "status": "Short time window of the current Porto Alegre model; no data from the old plot.",
+  "weeks": [
+    1.0,
+    1.5,
+    2.0,
+    2.5,
+    3.0,
+    3.5,
+    4.0,
+    4.5
+  ],
+  "central_probability": 0.96,
+  "reach_multiplier_sd": 2.053748910631822,
+  "samples_per_week": 10000,
+  "seed": 20261102,
+  "beta_mean": 1.2939,
+  "beta_sd": 0.1294,
+  "mu_log": 0.25268498267900075,
+  "sigma_log": 0.0997590162418358,
+  "truncation_cdf": [
+    0.4,
+    0.75
+  ],
+  "calculated_beta_bounds": [
+    1.2553461168790503,
+    1.3770884019375011
+  ],
+  "whisker_percentiles": [
+    5.0,
+    95.0
+  ],
+  "spatial_parameters": {
+    "L_km": 0.00894,
+    "alpha": 3.18,
+    "gamma_per_week": 1.2727272727272727,
+    "Tg_weeks": 2.6
+  },
+  "colors": {
+    "boxes": "#ADD8E6",
+    "medians": "#FF7F0E",
+    "whiskers": "#000000"
+  },
+  "local_dependencies_sha256": {
+    "ou_model.py": "fff301a80c52d8714b6a9e217ae850dac18233b328bce6cd9c3b48237f404bbe",
+    "poa_model.py": "765862d5acd6e92f6cca89a9e57e00f72e2027aaf09431a363fab9e406c228fc"
+  },
+  "notes": [
+    "The default selects a central 96% OU interval before modulation, not an ensemble percentile.",
+    "Integer weeks reuse the same draws as Figure 2 without reading output CSV files.",
+    "Half-weeks use new draws after consuming the original Figure 2 stream.",
+    "Draws represent time-specific marginal distributions, not individual trajectories.",
+    "No PDFs, Guzzetta references, or published boxplots are read.",
+    "Modulated 1D reach at each time, not a monthly expansion speed.",
+    "Intervals represent heterogeneity in beta, not confidence intervals.",
+    "Tg retains its baseline reference of 18.2 days and alpha remains 3.180; no refitting."
+  ]
+}

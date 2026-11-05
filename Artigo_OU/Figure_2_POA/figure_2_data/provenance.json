@@ -1,0 +1,31 @@
+{
+  "direct_source": "Método_OU_Área_de_Risco__versão_3_ (71).pdf",
+  "pdf_sha256": "9d8a3f032be35786b2810c42cb80aa880bba824868e0c7caae7c83cb24250b80",
+  "page": 14,
+  "figure": 2,
+  "method": "Affine conversion of PDF vector objects using the grid lines.",
+  "related_primary_source": "Guzzetta et al. (2018), Figure 4c, page 5",
+  "doi": "10.1038/s41467-018-05230-4",
+  "mean_point_count": 20,
+  "curve_vertex_count": 39,
+  "pdf_calibration": {
+    "x_week_1": 169.91635131835938,
+    "pdf_points_per_week": 14.777391935649671,
+    "y_zero_km": 290.1591796875,
+    "pdf_points_per_km": 25.364469528198242
+  },
+  "colors": {
+    "references": "#FF0000",
+    "boxes": "#ADD8E6",
+    "medians": "#FF7F0E"
+  },
+  "limitations": [
+    "Values recovered from the OU plot, not individual-level data or an original table.",
+    "Visual correspondence with Guzzetta's Figure 4c; the original manual procedure is unknown.",
+    "In the primary source, points are mean diameters of reconstructed clusters of observed cases, and the band is a 95% confidence interval.",
+    "Diameter is the maximum distance between any two observed cases in the cluster, not central 1D reach.",
+    "Noninteger time positions were retained without rounding or interpolation.",
+    "Decimal places reflect vector extraction, not epidemiological precision.",
+    "Published boxplots are used only as an audit reference; they are not model inputs."
+  ]
+}

@@ -1,0 +1,4 @@
+# Verified environment: Python 3.12.
+numpy==1.26.4
+matplotlib==3.10.8
+scipy==1.17.1
