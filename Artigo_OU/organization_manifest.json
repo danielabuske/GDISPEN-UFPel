@@ -1,0 +1,441 @@
+{
+  "format": 3,
+  "created_at_utc": "2026-11-02T22:30:07.4064999Z",
+  "description": "Three standalone local packages for the OU article figures; organization without recalibration.",
+  "source_relative_to_project": "Figuras_Artigo_OU/Figura_1_Bangkok",
+  "destination_relative_to_project": "Artigo_OU",
+  "original_sources_preserved": true,
+  "original_files_verified": 51,
+  "preserved_configuration": {
+    "central_probability": 0.96,
+    "alpha": 3.18,
+    "reference_generation_time_days": 18.2,
+    "boxplot_samples": 10000,
+    "seed": 20261102
+  },
+  "verified_environment": {
+    "python": "3.12.0",
+    "numpy": "1.26.4",
+    "matplotlib": "3.10.8",
+    "scipy": "1.17.1"
+  },
+  "figures": [
+    {
+      "folder": "Figure_1_Bangkok",
+      "run": "generate_figure_1_bangkok.py",
+      "outputs": "Figure_1_Bangkok/results/figure_1_bangkok_p96.{pdf,csv,json}",
+      "tests": 12,
+      "tests_at_initial_organization": 11
+    },
+    {
+      "folder": "Figure_2_POA",
+      "run": "generate_figure_2_poa.py",
+      "outputs": "Figure_2_POA/results/figure_2_poa_p96.{pdf,csv,json}",
+      "tests": 13,
+      "tests_at_initial_organization": 11
+    },
+    {
+      "folder": "Figure_3_POA_4_5_weeks",
+      "run": "generate_figure_3_poa_4_5_weeks.py",
+      "outputs": "Figure_3_POA_4_5_weeks/results/figure_3_poa_4_5_weeks_p96.{pdf,csv,json}",
+      "tests": 8,
+      "tests_at_initial_organization": 7
+    }
+  ],
+  "initial_verification": {
+    "total_tests": 29,
+    "tests_passed": true,
+    "isolated_copy_cli_with_different_working_directory": true,
+    "equivalence_at_initial_organization": [
+      {
+        "figure": "figura_1_bangkok_p96",
+        "identical_csv": true,
+        "identical_pdf_pixels": true,
+        "identical_pdf_text": true,
+        "label_96": true,
+        "identical_scientific_metadata": true
+      },
+      {
+        "figure": "figura_2_poa_p96",
+        "identical_csv": true,
+        "identical_pdf_pixels": true,
+        "identical_pdf_text": true,
+        "label_96": true,
+        "identical_scientific_metadata": true
+      },
+      {
+        "figure": "figura_3_poa_4_5_semanas_p96",
+        "identical_csv": true,
+        "identical_pdf_pixels": true,
+        "identical_pdf_text": true,
+        "label_96": true,
+        "identical_scientific_metadata": true
+      }
+    ],
+    "note": "Code consistency and portability tests, not epidemiological validation. Libraries are installed via requirements.txt and are not bundled."
+  },
+  "source_sha256": {
+    "CALIBRACAO_ALPHA_LEIA_ME.md": "23b4f10116d49951ae104fde923b3d4bdfb5d93f3f3399d678bc9213184ab8a1",
+    "calibrar_alpha_bangkok.py": "91c42033b27aa3124f48bcc7b65853707acaacb51ee7d7f02459bf91a280329c",
+    "extrair_referencias_figura_2.py": "11d33af7b68d6fd07963a4aff8e47d7a58d8debf6984cd31f474eb54e73e0658",
+    "FIGURA_2_LEIA_ME.md": "fb5f7ac1e3c19fbcc6281d8803978343beb06c9b1c53e1ab6733f7441fcdcb81",
+    "FIGURA_3_LEIA_ME.md": "ce5e1077ae87f0444a027cdd54edd7a26363f5a1f67394eb24162120677a239b",
+    "gerar_figura_1_bangkok.py": "658c45f03c35af8a51e17367150ab7f0dea0c8e8982d108fe14fd34e60ea875b",
+    "gerar_figura_2_poa.py": "afbc9e5f94fa02e319cbd04eb08b7d3fc49a9b84bc456c8554c907659f23bb19",
+    "gerar_figura_3_poa_4_5_semanas.py": "99b899ba31c84cfbfb3e57651184c88ce83ca629056d578c180100f16f3c1b55",
+    "manifesto_figura_1.json": "c99452f4a613a5f2ce5f867af8b58563411f65fe25a801e10f2c35434ba82c27",
+    "README.md": "d9e532ef14cf5b00e3b446babce05799fa3cc301014c51d54451f6e44b64479c",
+    "test_calibrar_alpha.py": "c7c8e040f9372567abe0e64f5f447ffe6f97212c594c331250ed22dab0431b8d",
+    "test_figura_1_bangkok.py": "6b35b314cf598cf2ab9307dd063ea679b36c86576dec3473f727ef85a904df66",
+    "test_figura_2_poa.py": "af2eccace2e99b91514ac3cad76dd425469e40b02fa336ac2e2891f0a1568e66",
+    "test_figura_3_poa.py": "b94e943a165862a1be9f78cb23124f40ef1dcadb614afb02ec7737e46670bd72",
+    "dados_figura_2/boxplots_publicados_auditoria.csv": "eeb3955401ba6f94970d94e5619a7d8663af1476ab33f226d6b6cd114ba7a1b0",
+    "dados_figura_2/proveniencia.json": "89db4f5dd817449bb1017af3586fd5870787cf122cae65eab0d9e5da08549fbb",
+    "dados_figura_2/referencias_vermelhas.csv": "2017780165e60fa3171706005e80d9a1af7941868fc7c460a64d431512d8828f",
+    "resultados/figura_1_bangkok.csv": "19591a6a02487b947da5e7acdf1b2bc972982bcae7ded50d69b910f6afdaba13",
+    "resultados/figura_1_bangkok.jpg": "d45b5e5788f4ff7d3bb36f940974810cb190a15dd925a8d8b36d8f0f43255b3f",
+    "resultados/figura_1_bangkok.json": "c480bd2384fd1018902c0528df6060af6c7b8c23b2302d28d421e04403b621c6",
+    "resultados/figura_1_bangkok.pdf": "0985c75706d07a14a808de23003dd07d8400b6d8384331af7d3b44865a21a785",
+    "resultados/figura_1_bangkok_2dp.csv": "4c48e324382aff6c10b2298f8da764887c2735844d0279429967e5d1a0b1fb36",
+    "resultados/figura_1_bangkok_2dp.json": "f6520b12bd0ad5214d54a4fc897ccb16bbc2ccd82afda37823f7521076cedf9e",
+    "resultados/figura_1_bangkok_2dp.pdf": "b86340fa6a2aabc4bbbf9881121d0970da4c4a65be7ead5e2562775b737f40b5",
+    "resultados/figura_1_bangkok_p96.csv": "19591a6a02487b947da5e7acdf1b2bc972982bcae7ded50d69b910f6afdaba13",
+    "resultados/figura_1_bangkok_p96.json": "a953b37e133131e8bb0500f500f6ce4c47ff2c3616c8eb037f663b0af287e0e3",
+    "resultados/figura_1_bangkok_p96.pdf": "25dd430b0fe72cf7e5518b3b041870f2e1e8c425eca9ae95fbcc4cb3d5344a23",
+    "resultados_calibracao_alpha/calibracao_alpha.csv": "0703a57ea592f49e379b26808f53b2fdee93cff8188e078d34f3c6e3f34ecaa3",
+    "resultados_calibracao_alpha/calibracao_alpha.json": "29fb8b23206c88ae13fc03209434cfe9b90ebc63c5e7905e43206273e1f00bf3",
+    "resultados_figura_2/figura_2_poa_2dp.csv": "2ab49048d0aa310095a4684c37e2c2241010e29dc4ca06cb006fc5dfe3639258",
+    "resultados_figura_2/figura_2_poa_2dp.json": "a45a7f7e7fea6a3ff6351982b41da23f5046eb952a9a271d0cff7c7d20de578d",
+    "resultados_figura_2/figura_2_poa_2dp.pdf": "a86d0301aff6b8ad46d62d9a28af70da740162be8ad1cca9c19058af0cd2d7db",
+    "resultados_figura_2/figura_2_poa_p96.csv": "2efe6d26e206b65b83333b79ee4552e0242b3cc47f96dcad13bddc29841ccfa7",
+    "resultados_figura_2/figura_2_poa_p96.json": "366d8b91cad2d4a53355c9eff89f018327e5e277515e5a92d9ed1267aede4719",
+    "resultados_figura_2/figura_2_poa_p96.pdf": "50769c880d72a718f6c3f2a09f5f171ef44e5dc8fecf8b4e4b1e6106cc3f5659",
+    "resultados_figura_2/figura_2_poa_p99.csv": "e3106bae2cb1a2bd0da38cebbfdd2ad3088c4c8054dbab910eb717cd05e6c665",
+    "resultados_figura_2/figura_2_poa_p99.jpg": "369a218c4cd62594b7aabe063e6f6f03861e5c6854c84353fa566620ea615660",
+    "resultados_figura_2/figura_2_poa_p99.json": "552df7375e6ceae5df3ad5def3e2fab2d564149ec415c8c95f4af2bca7d12695",
+    "resultados_figura_2/figura_2_poa_p99.pdf": "ba0a03b5253b85466594b4d927aee26e99fcad2bbf600efff36dc659db569452",
+    "resultados_figura_3/figura_3_poa_4_5_semanas_2dp.csv": "b2bd2c9ac7c0f7381bcf134e0b3cca4aa56b30830f452f7d10b3058d79335309",
+    "resultados_figura_3/figura_3_poa_4_5_semanas_2dp.json": "3931f531e012b452adef9dbf8174cb40a740c717870909b71ce3bc47f440d331",
+    "resultados_figura_3/figura_3_poa_4_5_semanas_2dp.pdf": "3e0983e9ddad1b4fea5adc7a33791c7ce42ebad79fe312597f22fcac0723a8a8",
+    "resultados_figura_3/figura_3_poa_4_5_semanas_p96.csv": "cf37123a95acea949dff892b2da1ee12bc21f777044b5cc0a1e64fd5e164306c",
+    "resultados_figura_3/figura_3_poa_4_5_semanas_p96.json": "542d15b72b0a50c92b3036813a2f11277870916a8364bf5625d47eb3effef24e",
+    "resultados_figura_3/figura_3_poa_4_5_semanas_p96.pdf": "9731b5394fcd50aef0221476640a40d8e574d9601aa40b79744350cf9348c7b7",
+    "resultados_figura_3/figura_3_poa_4_5_semanas_p99.csv": "0fc6639019b0cc13fbb0eabe44458c9e2a2806c17429c77dd34b9a372484a1aa",
+    "resultados_figura_3/figura_3_poa_4_5_semanas_p99.jpg": "0f75eed09b8014f8a9c8a6841b6ed2024f5a5d0a975c374c7d04e97cc3e4f7e7",
+    "resultados_figura_3/figura_3_poa_4_5_semanas_p99.json": "66f35b60fcf0d191cdac62d4818b8ab30dcd5bcd8587199679d9b01d754652c9",
+    "resultados_figura_3/figura_3_poa_4_5_semanas_p99.pdf": "9917b063055e6b489337859c681d025083aa3f5172130d35926766133a2b4fe8"
+  },
+  "files_sha256": {
+    "Figure_1_Bangkok/generate_figure_1_bangkok.py": "51874bc1e00986fbf8383ea5187934596ebd075d886f5570b563da2f2d855eeb",
+    "Figure_1_Bangkok/README.txt": "dfc410dc3da248c3a861e7ac56cb48affbb655ea1f72f0c3d52a6df51788dacf",
+    "Figure_1_Bangkok/requirements.txt": "473df5e99eb55759a25319c1ff5b77d6b4095247aea38b603b401eb772336312",
+    "Figure_1_Bangkok/results/figure_1_bangkok_p96.csv": "abcbba79c810aaaa84475e0db7c18cce466f6599bc73261900a74c8c4ff25bf7",
+    "Figure_1_Bangkok/results/figure_1_bangkok_p96.json": "bf8cb3f881856c560ae9a792bb6163d356a56f9a15f48ea295c592119dd3914f",
+    "Figure_1_Bangkok/results/figure_1_bangkok_p96.pdf": "14d3a45765a3226e6f2138e4201f43eeea0b36688dffcd580b872f817953e3d3",
+    "Figure_1_Bangkok/test_figure.py": "02cee9a2df51b2bac7dd4d93b9855cb0942baf0f79329777b9f38ca9b91571c2",
+    "Figure_1_Bangkok/validation/numerical_reference_p96.csv": "093f9948e618deab246f15fa66cf308955518be901faf4ab5f9d71165314ea26",
+    "Figure_2_POA/figure_2_data/provenance.json": "6a38ffcab4046439f0c916fe66a5c6da9d8d780644f8fced32fbffd75384d53c",
+    "Figure_2_POA/figure_2_data/red_references.csv": "bcfd807cc932e02f2aa2ec4edcadf1623efb7947aa7fcf8e6fa078141caecd3c",
+    "Figure_2_POA/generate_figure_2_poa.py": "01b60ca7ff23aea084f6dcf11620181b7bc5a44ce021251b7c1f938401162608",
+    "Figure_2_POA/ou_model.py": "fff301a80c52d8714b6a9e217ae850dac18233b328bce6cd9c3b48237f404bbe",
+    "Figure_2_POA/poa_model.py": "765862d5acd6e92f6cca89a9e57e00f72e2027aaf09431a363fab9e406c228fc",
+    "Figure_2_POA/README.txt": "30cebf04dc553d925156fb3f0e3b0d762deb5ae8794c0524aad1d0d6dd76a493",
+    "Figure_2_POA/requirements.txt": "82b5f563c19d9411ee86806769419544a772bbb7978052aa109237f9329c2da7",
+    "Figure_2_POA/results/figure_2_poa_p96.csv": "9df8308b5cff8f54225aecca83b835c34b7262f36abc36b9ef5bb0a18f33b6de",
+    "Figure_2_POA/results/figure_2_poa_p96.json": "8510e8e0bd6a3c851e5ffbb65c969f0440ec827e1e180885c04d663b2da147d2",
+    "Figure_2_POA/results/figure_2_poa_p96.pdf": "7345dae78bb3f011b0273086025fce0d5abae2ec5398f073dc046d256eb65d68",
+    "Figure_2_POA/test_figure.py": "6326302395ba64825a4421f0c803da784dc1e79fbfd2d9c0d4eb00c847c44881",
+    "Figure_2_POA/validation/numerical_reference_p96.csv": "0dd4706552cc3bcd052e60898d4121171b0af2c4dc662a61da495cb998e908ff",
+    "Figure_3_POA_4_5_weeks/generate_figure_3_poa_4_5_weeks.py": "65b4009310d23179d3b472089aaec6db2050cec234eebb23feed71495be1a546",
+    "Figure_3_POA_4_5_weeks/ou_model.py": "fff301a80c52d8714b6a9e217ae850dac18233b328bce6cd9c3b48237f404bbe",
+    "Figure_3_POA_4_5_weeks/poa_model.py": "765862d5acd6e92f6cca89a9e57e00f72e2027aaf09431a363fab9e406c228fc",
+    "Figure_3_POA_4_5_weeks/README.txt": "e207ef5d89884911a3785ea0b2cf5d8fc3584135cfaff22f388e47cc65eb2ce1",
+    "Figure_3_POA_4_5_weeks/requirements.txt": "82b5f563c19d9411ee86806769419544a772bbb7978052aa109237f9329c2da7",
+    "Figure_3_POA_4_5_weeks/results/figure_3_poa_4_5_weeks_p96.csv": "0306a24b2e7e15e16e259dc48b3596bde817d49ae96f996e7cc9114d5c56d60a",
+    "Figure_3_POA_4_5_weeks/results/figure_3_poa_4_5_weeks_p96.json": "938e30231a16a05d8ba438a7cc50b7b3fc1ffc06665117615c53eecd42922150",
+    "Figure_3_POA_4_5_weeks/results/figure_3_poa_4_5_weeks_p96.pdf": "5f37b4af8f3fbe669319b9f3d2200d69cb632f15b4c4b9f1688de5f21d28304b",
+    "Figure_3_POA_4_5_weeks/test_figure.py": "9503e7922024d9da8af96588cbd928725c1234cefe318f3ce688e46571831e30",
+    "Figure_3_POA_4_5_weeks/validation/numerical_reference_p96.csv": "aca5fc58aa1909fc0fe2076f43f5b2be89b93174ab44619a0614a9d184bd3611",
+    "manuscript_audit_response21.md": "24de66edd43c18ac6cee8a805a06f2b0a51a4126e3163c90eb2d1c775b672905",
+    "README.txt": "a14864b0771de1492cb4ddaa90479ac5806a801583f1015f7fe7d5ee776adf7a"
+  },
+  "updated_at_utc": "2026-11-05 01:34:47 UTC",
+  "presentation": {
+    "axis_label_font_size_pt": 18,
+    "tick_label_font_size_pt": 10,
+    "vector_pdf": true
+  },
+  "appearance_revision_verification": {
+    "total_tests": 29,
+    "tests_passed": true,
+    "numerical_files_and_metadata_preserved": true,
+    "pdfs": [
+      {
+        "pdf": "Figura_1_Bangkok\\resultados\\figura_1_bangkok_p96.pdf",
+        "axis_label_font_sizes_pt": [
+          18,
+          18
+        ],
+        "axis_labels_not_clipped": true,
+        "tick_label_font_size_pt": 10
+      },
+      {
+        "pdf": "Figura_2_POA\\resultados\\figura_2_poa_p96.pdf",
+        "axis_label_font_sizes_pt": [
+          18,
+          18
+        ],
+        "axis_labels_not_clipped": true,
+        "tick_label_font_size_pt": 10
+      },
+      {
+        "pdf": "Figura_3_POA_4_5_semanas\\resultados\\figura_3_poa_4_5_semanas_p96.pdf",
+        "axis_label_font_sizes_pt": [
+          18,
+          18
+        ],
+        "axis_labels_not_clipped": true,
+        "tick_label_font_size_pt": 10
+      }
+    ]
+  },
+  "history": [
+    {
+      "revision": "Axis labels set to 18 pt",
+      "date_utc": "2026-11-02 22:59:37 UTC",
+      "previous_font_sizes_pt": {
+        "Figura_1_Bangkok": 14,
+        "Figura_2_POA": 10,
+        "Figura_3_POA_4_5_semanas": 14
+      },
+      "previous_files_sha256": {
+        "LEIA_ME.txt": "7b8baca7c948c447aac874430796e05f536de838c54d584529ffcede794c35f4",
+        "Figura_1_Bangkok/gerar_figura_1_bangkok.py": "658c45f03c35af8a51e17367150ab7f0dea0c8e8982d108fe14fd34e60ea875b",
+        "Figura_1_Bangkok/test_figura.py": "0caa2230dac003c77da64691fb756dc8e8568ca6b90b0b0dc44de0dcec90051b",
+        "Figura_1_Bangkok/resultados/figura_1_bangkok_p96.pdf": "1c8c7902b215916eca986779c5431098a31964dd28688b5cb382afb97d5cbc81",
+        "Figura_2_POA/gerar_figura_2_poa.py": "fa14d2f51fb4b85fb4c44721079c8fd3c30381afc6dd6411f2d8682e4c979fdb",
+        "Figura_2_POA/test_figura.py": "4bdcf3ff2f54082459974a3d40ca1825dfa89e547dd77f23ec1434703c9c4a00",
+        "Figura_2_POA/resultados/figura_2_poa_p96.pdf": "0e76615317128d6648e6e665aa4051927666586856464cffe33bcaa21fc77736",
+        "Figura_3_POA_4_5_semanas/gerar_figura_3_poa_4_5_semanas.py": "3dfa92169cf1311be969f3c469f8771753b7ebb6aad163a24d6e1de07cc78099",
+        "Figura_3_POA_4_5_semanas/test_figura.py": "866db7e646ea9ee62b028082d3e69a5bfe9b7723d0fc100ae06c3949363773ba",
+        "Figura_3_POA_4_5_semanas/resultados/figura_3_poa_4_5_semanas_p96.pdf": "f1828c1f8f4b9327c96133d3ce80436e5c7d4b23ff490560585bbf87e966d0cc"
+      },
+      "note": "Record of the appearance revision. Scientific CSV and JSON files remained byte-for-byte identical at that revision. Initial visual equivalence refers to the organization stage, before that revision."
+    },
+    {
+      "revision": "English localization of documentation, provenance, reference CSV labels, and generated reports",
+      "date_utc": "2026-11-05 01:20:41 UTC",
+      "previous_manifest_files_sha256": {
+        "LEIA_ME.txt": "c0e59b3eb4fdcc9f8cd7ae48a4bc81b33d352fed95cc58df2f514d024765ddd4",
+        "Figura_1_Bangkok/gerar_figura_1_bangkok.py": "86ff9cae67ae45b2ee45c3b1800013eb8f2dd000fad1d4d298be2df9d55b87c6",
+        "Figura_1_Bangkok/LEIA_ME.txt": "4bb129a0c9d41f7b6c9359ed1a3fc9be002d5326c86c2b3b58acdebbcf60a317",
+        "Figura_1_Bangkok/requirements.txt": "0c39ea45ac97fdaab25bd0a98bbde25af82b354db79336ff747d2ac4608f69a0",
+        "Figura_1_Bangkok/test_figura.py": "b13c35969b9bf55afb4cd414157f91f57715c3b4fb7b6c6edab74c2accfecad6",
+        "Figura_1_Bangkok/resultados/figura_1_bangkok_p96.csv": "19591a6a02487b947da5e7acdf1b2bc972982bcae7ded50d69b910f6afdaba13",
+        "Figura_1_Bangkok/resultados/figura_1_bangkok_p96.json": "a953b37e133131e8bb0500f500f6ce4c47ff2c3616c8eb037f663b0af287e0e3",
+        "Figura_1_Bangkok/resultados/figura_1_bangkok_p96.pdf": "cb8b99aafafac36d5266e5f52217dfedb94a0b45cf7acd9af955b1534a3413b7",
+        "Figura_1_Bangkok/validacao/referencia_numerica_p96.csv": "6ba94afad5b5a73d0583396fa33fece1436c3a7c72069ed006324436da5ab5f5",
+        "Figura_2_POA/gerar_figura_2_poa.py": "cf009df14177f7f1e1d262cb66859cf8f3cd3c5b41617273c9e8c73854bde83f",
+        "Figura_2_POA/LEIA_ME.txt": "f6dda78cf166de2085a875c0ea40e60548c9e77e3458e57e5d34f0ec1f50d45d",
+        "Figura_2_POA/modelo_ou.py": "bea334f4fb643cb917af82951050d2a2ea2da5b20a5ee65dc6fb9500fb053e32",
+        "Figura_2_POA/modelo_poa.py": "321903bd4e521a87edfd461294dbdfd757965ec446c2736de5b9d4fabe04555f",
+        "Figura_2_POA/requirements.txt": "bee7c93e612f137e438c043856ae2e73816f396fb556305afe79746e5a77a2a3",
+        "Figura_2_POA/test_figura.py": "77f1d0301bd1b992da5f5857be1ed49dbed6558921c9c5621f2dbb3549ff7279",
+        "Figura_2_POA/dados_figura_2/proveniencia.json": "2f56b39ad1416780ee95aa71725c1363292a7e56e14f17cb67143ef162d09cad",
+        "Figura_2_POA/dados_figura_2/referencias_vermelhas.csv": "3e7feb35a413a8c68605ff7fa52ff8c3a18ade98db61f5d8a07fb44129ce7e6e",
+        "Figura_2_POA/resultados/figura_2_poa_p96.csv": "2efe6d26e206b65b83333b79ee4552e0242b3cc47f96dcad13bddc29841ccfa7",
+        "Figura_2_POA/resultados/figura_2_poa_p96.json": "366d8b91cad2d4a53355c9eff89f018327e5e277515e5a92d9ed1267aede4719",
+        "Figura_2_POA/resultados/figura_2_poa_p96.pdf": "b02a0f7e7e6fa3a20cd02de3c5abaac9f9fd1412c0a6ce279556b855cb5d3366",
+        "Figura_2_POA/validacao/referencia_numerica_p96.csv": "275ca67e6f2a5346e2c490961cc229f28a02dc0c011c5d609a3389c14e591ac2",
+        "Figura_3_POA_4_5_semanas/gerar_figura_3_poa_4_5_semanas.py": "0c2f2dea25beffed13540dd4ed4b350c6788f04b0460e7483d9217c601993468",
+        "Figura_3_POA_4_5_semanas/LEIA_ME.txt": "cdfa8ee4004362b252bdc0d2f56dd736e681603c1b642219f259d0c8cadc8e5f",
+        "Figura_3_POA_4_5_semanas/modelo_ou.py": "bea334f4fb643cb917af82951050d2a2ea2da5b20a5ee65dc6fb9500fb053e32",
+        "Figura_3_POA_4_5_semanas/modelo_poa.py": "321903bd4e521a87edfd461294dbdfd757965ec446c2736de5b9d4fabe04555f",
+        "Figura_3_POA_4_5_semanas/requirements.txt": "bee7c93e612f137e438c043856ae2e73816f396fb556305afe79746e5a77a2a3",
+        "Figura_3_POA_4_5_semanas/test_figura.py": "8cce1568ed24eaae13a0dbc0b1bd684bd5d74b0958876dee5e53e679144d38d9",
+        "Figura_3_POA_4_5_semanas/resultados/figura_3_poa_4_5_semanas_p96.csv": "cf37123a95acea949dff892b2da1ee12bc21f777044b5cc0a1e64fd5e164306c",
+        "Figura_3_POA_4_5_semanas/resultados/figura_3_poa_4_5_semanas_p96.json": "4dc964f3b64671a083160d57bf4f41e1a514925f7da68a80ab57fa08418df9b9",
+        "Figura_3_POA_4_5_semanas/resultados/figura_3_poa_4_5_semanas_p96.pdf": "8936f9f5210009d667b11d9adb27c1d10c6fb9a0ea80841806c1339ece35d28e",
+        "Figura_3_POA_4_5_semanas/validacao/referencia_numerica_p96.csv": "108f89d0976c7af90ac426be309585cdaf29a00526e4397a24dea881fb5c9230"
+      },
+      "note": "The previous manifest hashes are retained as a historical snapshot. They do not necessarily describe the package immediately before this localization, because intervening code and axis-label edits had already occurred. All seven CSV tables were compared with their actual pre-localization contents; every numeric value was unchanged. PDFs retained identical text and rendered pixels."
+    },
+    {
+      "revision": "English filenames, local module imports, subfolder names, and output paths",
+      "date_utc": "2026-11-05 01:34:47 UTC",
+      "actual_pre_rename_files_sha256": {
+        "auditoria_manuscrito_resposta21.md": "eefe0b520f35ed2228a22923c7626e2c0cce914915e90468f413afb0b6efc845",
+        "LEIA_ME.txt": "dd3685525bdead20c2dcf02122509d722bc79788ca23acb530420ea498c69241",
+        "manifesto_organizacao.json": "fd908c1ebec9fe1e41c60bdc986a500cdecb560764a9eb03f558dca6361a2004",
+        "Figura_2_POA/gerar_figura_2_poa.py": "38c4ecf0d9bc36cb0494eced7d62ba6815c17afd0f9a563c4dd2f9a1965df50d",
+        "Figura_2_POA/LEIA_ME.txt": "20d06b84b4fa9456628e04c911f358bcc36605a22ca5f0ae9e597771797958ab",
+        "Figura_2_POA/modelo_ou.py": "c43181093301adb615c8121cd835282aa8887074cc2bdf7a4684b807020e194b",
+        "Figura_2_POA/modelo_poa.py": "d0f4f5bb6d4aa10b178700415537680df08250c8a32615b8dcbabeb3659f9682",
+        "Figura_2_POA/requirements.txt": "82b5f563c19d9411ee86806769419544a772bbb7978052aa109237f9329c2da7",
+        "Figura_2_POA/test_figura.py": "08d5e7f87ec7dfd4894ba5592fcf766e5d86673c8910d3491784198715ae26a8",
+        "Figura_2_POA/dados_figura_2/proveniencia.json": "6a38ffcab4046439f0c916fe66a5c6da9d8d780644f8fced32fbffd75384d53c",
+        "Figura_2_POA/dados_figura_2/referencias_vermelhas.csv": "bcfd807cc932e02f2aa2ec4edcadf1623efb7947aa7fcf8e6fa078141caecd3c",
+        "Figura_2_POA/resultados/figura_2_poa_p96.csv": "9df8308b5cff8f54225aecca83b835c34b7262f36abc36b9ef5bb0a18f33b6de",
+        "Figura_2_POA/resultados/figura_2_poa_p96.json": "bfca98dc3bb189ed1d6a520cb8d0a25ebc0276484f55bdadcffb66c522523b23",
+        "Figura_2_POA/resultados/figura_2_poa_p96.pdf": "7345dae78bb3f011b0273086025fce0d5abae2ec5398f073dc046d256eb65d68",
+        "Figura_2_POA/validacao/referencia_numerica_p96.csv": "0dd4706552cc3bcd052e60898d4121171b0af2c4dc662a61da495cb998e908ff",
+        "Figure_1_Bangkok/gerar_figura_1_bangkok.py": "0eee8eafb8abfec528b339c478604fb9377b7d6f09f97c9deb07c16da5e46c02",
+        "Figure_1_Bangkok/LEIA_ME.txt": "3620ab7856a0edafb877613eabef732161df439ed8a0bc28ac7baf3284acd18e",
+        "Figure_1_Bangkok/requirements.txt": "473df5e99eb55759a25319c1ff5b77d6b4095247aea38b603b401eb772336312",
+        "Figure_1_Bangkok/test_figura.py": "e920112150d025a4c0a7253882f4d61d3534490c0759c48b13f0d6655a67c7a2",
+        "Figure_1_Bangkok/resultados/figura_1_bangkok_p96.csv": "abcbba79c810aaaa84475e0db7c18cce466f6599bc73261900a74c8c4ff25bf7",
+        "Figure_1_Bangkok/resultados/figura_1_bangkok_p96.json": "bf8cb3f881856c560ae9a792bb6163d356a56f9a15f48ea295c592119dd3914f",
+        "Figure_1_Bangkok/resultados/figura_1_bangkok_p96.pdf": "14d3a45765a3226e6f2138e4201f43eeea0b36688dffcd580b872f817953e3d3",
+        "Figure_1_Bangkok/validacao/referencia_numerica_p96.csv": "093f9948e618deab246f15fa66cf308955518be901faf4ab5f9d71165314ea26",
+        "Figure_3_POA_4_5_weeks/gerar_figura_3_poa_4_5_semanas.py": "a0e2e04032daef51d4d6fe0dd5425989841c1a1d7245b8b2ccec687e21d9b706",
+        "Figure_3_POA_4_5_weeks/LEIA_ME.txt": "967039d4ae56a96fb966948ab0731d834ee401db1af6a3310386af72fe22e54c",
+        "Figure_3_POA_4_5_weeks/modelo_ou.py": "c43181093301adb615c8121cd835282aa8887074cc2bdf7a4684b807020e194b",
+        "Figure_3_POA_4_5_weeks/modelo_poa.py": "d0f4f5bb6d4aa10b178700415537680df08250c8a32615b8dcbabeb3659f9682",
+        "Figure_3_POA_4_5_weeks/requirements.txt": "82b5f563c19d9411ee86806769419544a772bbb7978052aa109237f9329c2da7",
+        "Figure_3_POA_4_5_weeks/test_figura.py": "f56c9411f0b8961e54d73af3390879357bc04b293946bdd297fd8df9158e241f",
+        "Figure_3_POA_4_5_weeks/resultados/figura_3_poa_4_5_semanas_p96.csv": "0306a24b2e7e15e16e259dc48b3596bde817d49ae96f996e7cc9114d5c56d60a",
+        "Figure_3_POA_4_5_weeks/resultados/figura_3_poa_4_5_semanas_p96.json": "91d0646f349dc96dcfc3cce258aeb6e6d54578ad395622ee069da01861411d6b",
+        "Figure_3_POA_4_5_weeks/resultados/figura_3_poa_4_5_semanas_p96.pdf": "5f37b4af8f3fbe669319b9f3d2200d69cb632f15b4c4b9f1688de5f21d28304b",
+        "Figure_3_POA_4_5_weeks/validacao/referencia_numerica_p96.csv": "aca5fc58aa1909fc0fe2076f43f5b2be89b93174ab44619a0614a9d184bd3611"
+      },
+      "path_mapping": {
+        "auditoria_manuscrito_resposta21.md": "manuscript_audit_response21.md",
+        "LEIA_ME.txt": "README.txt",
+        "manifesto_organizacao.json": "organization_manifest.json",
+        "Figura_2_POA/gerar_figura_2_poa.py": "Figure_2_POA/generate_figure_2_poa.py",
+        "Figura_2_POA/LEIA_ME.txt": "Figure_2_POA/README.txt",
+        "Figura_2_POA/modelo_ou.py": "Figure_2_POA/ou_model.py",
+        "Figura_2_POA/modelo_poa.py": "Figure_2_POA/poa_model.py",
+        "Figura_2_POA/requirements.txt": "Figure_2_POA/requirements.txt",
+        "Figura_2_POA/test_figura.py": "Figure_2_POA/test_figure.py",
+        "Figura_2_POA/dados_figura_2/proveniencia.json": "Figure_2_POA/figure_2_data/provenance.json",
+        "Figura_2_POA/dados_figura_2/referencias_vermelhas.csv": "Figure_2_POA/figure_2_data/red_references.csv",
+        "Figura_2_POA/resultados/figura_2_poa_p96.csv": "Figure_2_POA/results/figure_2_poa_p96.csv",
+        "Figura_2_POA/resultados/figura_2_poa_p96.json": "Figure_2_POA/results/figure_2_poa_p96.json",
+        "Figura_2_POA/resultados/figura_2_poa_p96.pdf": "Figure_2_POA/results/figure_2_poa_p96.pdf",
+        "Figura_2_POA/validacao/referencia_numerica_p96.csv": "Figure_2_POA/validation/numerical_reference_p96.csv",
+        "Figure_1_Bangkok/gerar_figura_1_bangkok.py": "Figure_1_Bangkok/generate_figure_1_bangkok.py",
+        "Figure_1_Bangkok/LEIA_ME.txt": "Figure_1_Bangkok/README.txt",
+        "Figure_1_Bangkok/test_figura.py": "Figure_1_Bangkok/test_figure.py",
+        "Figure_1_Bangkok/resultados/figura_1_bangkok_p96.csv": "Figure_1_Bangkok/results/figure_1_bangkok_p96.csv",
+        "Figure_1_Bangkok/resultados/figura_1_bangkok_p96.json": "Figure_1_Bangkok/results/figure_1_bangkok_p96.json",
+        "Figure_1_Bangkok/resultados/figura_1_bangkok_p96.pdf": "Figure_1_Bangkok/results/figure_1_bangkok_p96.pdf",
+        "Figure_1_Bangkok/validacao/referencia_numerica_p96.csv": "Figure_1_Bangkok/validation/numerical_reference_p96.csv",
+        "Figure_3_POA_4_5_weeks/gerar_figura_3_poa_4_5_semanas.py": "Figure_3_POA_4_5_weeks/generate_figure_3_poa_4_5_weeks.py",
+        "Figure_3_POA_4_5_weeks/LEIA_ME.txt": "Figure_3_POA_4_5_weeks/README.txt",
+        "Figure_3_POA_4_5_weeks/modelo_ou.py": "Figure_3_POA_4_5_weeks/ou_model.py",
+        "Figure_3_POA_4_5_weeks/modelo_poa.py": "Figure_3_POA_4_5_weeks/poa_model.py",
+        "Figure_3_POA_4_5_weeks/test_figura.py": "Figure_3_POA_4_5_weeks/test_figure.py",
+        "Figure_3_POA_4_5_weeks/resultados/figura_3_poa_4_5_semanas_p96.csv": "Figure_3_POA_4_5_weeks/results/figure_3_poa_4_5_weeks_p96.csv",
+        "Figure_3_POA_4_5_weeks/resultados/figura_3_poa_4_5_semanas_p96.json": "Figure_3_POA_4_5_weeks/results/figure_3_poa_4_5_weeks_p96.json",
+        "Figure_3_POA_4_5_weeks/resultados/figura_3_poa_4_5_semanas_p96.pdf": "Figure_3_POA_4_5_weeks/results/figure_3_poa_4_5_weeks_p96.pdf",
+        "Figure_3_POA_4_5_weeks/validacao/referencia_numerica_p96.csv": "Figure_3_POA_4_5_weeks/validation/numerical_reference_p96.csv"
+      },
+      "note": "Already renamed Figure_1_Bangkok and Figure_3_POA_4_5_weeks folders were preserved. The root Artigo_OU was retained. Four obsolete generated Python cache files were removed after checking their paths and hashes. Historical source-document titles and archived path identifiers were not renamed. The optional two-standard-deviation output suffix now uses '2sd' instead of '2dp'."
+    }
+  ],
+  "integrity_note": "Current hashes cover package files except this manifest and generated bytecode caches. Archived records retain their original filenames and hashes. Renaming preserved every CSV and PDF byte for byte. Regenerating PDFs may change date metadata and hashes without changing the rendered figure.",
+  "language": "en",
+  "historical_records_note": "Source hashes, initial verification, appearance-revision checks, and english_localization_verification are dated historical records. Paths in those records are intentionally preserved. Current English filenames and paths are listed in figures, files_sha256, and filename_migration_verification.",
+  "english_localization_verification": {
+    "date_utc": "2026-11-05 01:20:41 UTC",
+    "total_tests": 33,
+    "tests_passed": true,
+    "tests_by_figure": {
+      "Figura_1_Bangkok": 12,
+      "Figura_2_POA": 13,
+      "Figura_3_POA_4_5_semanas": 8
+    },
+    "isolated_copy_cli_with_different_working_directory": true,
+    "numeric_csv_checks": [
+      {
+        "file": "Figura_1_Bangkok\\resultados\\figura_1_bangkok_p96.csv",
+        "rows": 29,
+        "numeric_values_unchanged": true
+      },
+      {
+        "file": "Figura_1_Bangkok\\validacao\\referencia_numerica_p96.csv",
+        "rows": 29,
+        "numeric_values_unchanged": true
+      },
+      {
+        "file": "Figura_2_POA\\dados_figura_2\\referencias_vermelhas.csv",
+        "rows": 59,
+        "numeric_values_unchanged": true
+      },
+      {
+        "file": "Figura_2_POA\\resultados\\figura_2_poa_p96.csv",
+        "rows": 20,
+        "numeric_values_unchanged": true
+      },
+      {
+        "file": "Figura_2_POA\\validacao\\referencia_numerica_p96.csv",
+        "rows": 20,
+        "numeric_values_unchanged": true
+      },
+      {
+        "file": "Figura_3_POA_4_5_semanas\\resultados\\figura_3_poa_4_5_semanas_p96.csv",
+        "rows": 8,
+        "numeric_values_unchanged": true
+      },
+      {
+        "file": "Figura_3_POA_4_5_semanas\\validacao\\referencia_numerica_p96.csv",
+        "rows": 8,
+        "numeric_values_unchanged": true
+      }
+    ],
+    "pdf_checks": {
+      "pdfs": 3,
+      "text_and_pixels_unchanged": true,
+      "fresh_outputs_match_existing": true
+    },
+    "model_equations_and_parameters_unchanged": true,
+    "filenames_and_historical_source_titles_preserved": true,
+    "documents_translated": [
+      "LEIA_ME.txt",
+      "Figura_1_Bangkok/LEIA_ME.txt",
+      "Figura_2_POA/LEIA_ME.txt",
+      "Figura_3_POA_4_5_semanas/LEIA_ME.txt",
+      "auditoria_manuscrito_resposta21.md",
+      "manifesto_organizacao.json",
+      "Figura_2_POA/dados_figura_2/proveniencia.json"
+    ],
+    "generated_report_language": "en",
+    "csv_column_and_series_language": "en",
+    "legacy_portuguese_csv_input_supported": true,
+    "pdf_handling": "Figure 1 was regenerated in place. Figures 2 and 3 were regenerated in a temporary directory and compared with the existing PDFs. Existing PDFs were retained because their text and rendered pixels were identical; the Figure 2 PDF was not writable during generation. CSV and JSON outputs were updated in all three folders.",
+    "audit_report_status": "Translation of the historical audit only, not a new review of the revised manuscript."
+  },
+  "filename_migration_verification": {
+    "date_utc": "2026-11-05 01:34:47 UTC",
+    "completed": true,
+    "pending_renames": [],
+    "package_root": "Artigo_OU",
+    "total_tests": 33,
+    "tests_passed": true,
+    "tests_by_figure": {
+      "Figure_1_Bangkok": 12,
+      "Figure_2_POA": 13,
+      "Figure_3_POA_4_5_weeks": 8
+    },
+    "isolated_copy_cli_with_different_working_directory": true,
+    "byte_identical_csv_and_pdf_files": [
+      "Figure_2_POA/figure_2_data/red_references.csv",
+      "Figure_2_POA/results/figure_2_poa_p96.csv",
+      "Figure_2_POA/results/figure_2_poa_p96.pdf",
+      "Figure_2_POA/validation/numerical_reference_p96.csv",
+      "Figure_1_Bangkok/results/figure_1_bangkok_p96.csv",
+      "Figure_1_Bangkok/results/figure_1_bangkok_p96.pdf",
+      "Figure_1_Bangkok/validation/numerical_reference_p96.csv",
+      "Figure_3_POA_4_5_weeks/results/figure_3_poa_4_5_weeks_p96.csv",
+      "Figure_3_POA_4_5_weeks/results/figure_3_poa_4_5_weeks_p96.pdf",
+      "Figure_3_POA_4_5_weeks/validation/numerical_reference_p96.csv"
+    ],
+    "freshly_generated_pdfs_match_existing_text_and_pixels": true,
+    "equations_parameters_and_random_seed_unchanged": true,
+    "imports_and_readme_commands_updated": true,
+    "generated_reports_reference_current_names": true,
+    "old_bytecode_cache_files_removed": 4,
+    "note": "The Figure 2 PDF was initially locked by another process. After the lock was released, the PDF and both containing directories were successfully renamed. No renames remain pending."
+  }
+}
